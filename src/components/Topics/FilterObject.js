@@ -51,7 +51,7 @@ class FilterObject extends Component{
             <h4>Filter Object</h4>
             <span className="puzzleText">Unfiltered: { JSON.stringify(this.state.laptops) }</span>
             <input className="inputLine"            onChange={( change )=> this.updateInput(change.target.value)}></input>
-            <button className="confirmationButton"  onClick ={( click ) => this.filterLaptops(this.state.userInput) }>Filter</button>
+            <button className="confirmationButton"  onClick={( click ) => this.filterLaptops(this.state.userInput) }>Filter</button>
             <span className="resultsBox filterObjectRB">Filtered: { JSON.stringify(this.state.filteredLaptops) }</span>
         </div>
         );
